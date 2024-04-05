@@ -8,6 +8,15 @@ import AdminUpdate from './pages/adminupdate.jsx';
 import AdminProfile from './pages/adminprofile.jsx'; // Import AdminProfile once
 import AdminUploadMaterial from './pages/adminuploadmaterial.jsx'; // Import AdminProfile once
 
+import SuperAdminAdd from './pages/superadminadd.jsx';
+import SuperAdminAddAdmin from './pages/superadminAddadmin.jsx'; // Corrected import statement
+import SuperAdminProfile from './pages/superadminprofile.jsx';
+import SuperAdminUpdate from './pages/superadminupdate.jsx'; // Import AdminProfile once
+import SuperAdminUploadMaterial from './pages/superadminuploadmaterial.jsx'; // Import AdminProfile once
+import SuperAdminAddStudent from './pages/superadminAddstudent.jsx'; // Import AdminProfile once
+import SuperAdminAbout from './pages/superadminabout.jsx'; // Import AdminProfile once
+
+
 
 import About from './pages/about.jsx';
 import Contact from './pages/contact.jsx';
@@ -41,6 +50,14 @@ function App() {
                     <Route path='/adminuploadmaterial' element={<AdminUploadMaterial/>}/>
 
                     
+                    <Route path='/superadminabout' element={<SuperAdminAbout/>}/>
+                    <Route path='/superadminAddadmin' element={<SuperAdminAddAdmin/>}/> {/* Corrected route path */}
+                    <Route path='/superadminadd' element={<SuperAdminAdd/>}/>
+                    <Route path='/superadminprofile' element={<SuperAdminProfile/>}/>
+                    <Route path='/superadminupdate' element={<SuperAdminUpdate/>}/>
+                    <Route path='/superadminuploadmaterial' element={<SuperAdminUploadMaterial/>}/>
+                    <Route path='/superadminAddstudent' element={<SuperAdminAddStudent/>}/>
+
 
 
 
