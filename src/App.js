@@ -1,6 +1,10 @@
 import React from 'react';
 import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
+
+import LandingPage from './pages/landingpage.jsx'; // Import AdminProfile once
+
+
 import AdminAbout from './pages/adminabout.jsx';
 import AdminAddStudent from './pages/adminAddStudent.jsx'; // Corrected import statement
 import AdminAdd from './pages/adminadd.jsx';
@@ -40,6 +44,7 @@ function App() {
             <BrowserRouter>
                 <Routes>
                     <Route path='/about' element={<About/>}/>
+                    <Route path='/landingpage' element={<LandingPage/>}/>
 
 
                     <Route path='/adminabout' element={<AdminAbout/>}/>
